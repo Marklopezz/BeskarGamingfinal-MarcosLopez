@@ -1,0 +1,47 @@
+/* Fonts */
+
+@import"base/font";
+
+/* mediaqueries */
+
+@import"base/mediaqueries";
+// variables
+@import"utilities/variables";
+//listas
+@import"utilities/listas";
+
+/* mapas */
+
+@import"utilities/mapas";
+//extends
+@import"utilities/extends";
+//mixin
+@import"utilities/mixin";
+
+/* header */
+
+@import"layout/header";
+
+/* body */
+
+@import"layout/bodyIndex";
+
+/* footer */
+
+@import"layout/footer";
+
+/*     Pagina Categorias     */
+
+@import"views/categorias";
+
+/*     Pagina Ofertas     */
+
+@import"views/ofertas";
+
+/*     Pagina Arma tu Pc     */
+
+@import"views/armatupc";
+
+/*     Pagina Servicios     */
+
+@import"views/servicios";

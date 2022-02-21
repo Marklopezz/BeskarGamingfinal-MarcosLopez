@@ -1,0 +1,13 @@
+@media screen and (max-width:520px) {
+    header {
+        .navbar {
+            text-decoration: none;
+            font-size: 1.2rem;
+            .container-fluid {
+                .logo img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+footer {
+    background-color: rgba(84, 81, 124, 0.842);
+    padding: 1.2rem 0;
+    color: #efecec;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
+    span {
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 500;
+    }
+    span:hover {
+        color: #5a94fa;
+    }
+    .redes {
+        margin: 0.2rem auto;
+        a {
+            img {
+                height: 2.5rem;
+                cursor: pointer;
+                transition: all .5s ease-in-out;
+                margin: 0 1rem;
+            }
+            img:hover {
+                transform: scale(1.25);
+            }
+        }
+    }
+    .subir {
+        margin: 1rem;
+        .nav-link {
+            color: nth($listacolores, 1);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .active {
+            color: nth($listacolores, 1);
+        }
+        a {
+            img {
+                top: 10%;
+                @extend %sizeimg;
+            }
+        }
+    }
+}

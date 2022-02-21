@@ -1,0 +1,52 @@
+.mainCategorias {
+    div {
+        .categorias-titulo {
+            color: map-get($map: $colores, $key: fontAlt-color);
+            background: map-get($map: $colores, $key: backgrounds);
+            border: 1px solid $color-cards;
+            box-shadow: 0 15px 32px 5px map-get($map: $colores, $key: shadowAlt-color);
+            margin: 1rem 0 1rem 0;
+            padding: 1rem;
+            width: 80%;
+            transition: 1s ease-in-out;
+        }
+        div {
+            .subtituloCategorias {
+                color: map-get($map: $colores, $key: fontAlt-color);
+                background: map-get($map: $colores, $key: backgrounds);
+                border: 1px solid $color-cards;
+                box-shadow: 0 15px 32px 5px map-get($map: $colores, $key: shadowAlt-color);
+                margin: 1rem 0 1rem 0;
+                padding: 1rem;
+                width: 60%;
+                transition: 1s ease-in-out;
+            }
+            .categoriasCards {
+                justify-content: center;
+                background-image: url("../img/spaceassault.jpg");
+                @extend %bg-img;
+                width: 100%;
+                padding: 2rem 4rem 2rem 4rem;
+                margin: 1rem auto;
+                border: 0.2rem groove $border-color;
+                border-radius: 1rem;
+                box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: card-color);
+                .cardCategorias {
+                    width: 90%;
+                    border-radius: 10px;
+                    background-color: map-get($map: $colores, $key: back);
+                    border: 0.2rem $color-cards solid;
+                }
+                .cardCategorias:hover {
+                    transform: scale(1.1);
+                    animation-duration: 2s;
+                }
+            }
+            .categoriasCards:hover {
+                background-image: url("../img/combateaereo.jpg");
+                border: 0.2rem groove map-get($map: $colores, $key: card-Hover);
+                transition-duration: 0.6s;
+            }
+        }
+    }
+}

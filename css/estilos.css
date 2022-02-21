@@ -1,0 +1,349 @@
+/* Fonts */
+@font-face {
+  font-family: "stFont";
+  src: url(../font/Starjhol.ttf); }
+
+@font-face {
+  font-family: "starFont";
+  src: url(../font/Starjout.ttf); }
+
+@font-face {
+  font-family: "subtituloFont";
+  src: url(../font/Starjedi.ttf); }
+
+@font-face {
+  font-family: "galaxyFont";
+  src: url(../font/Strjmono.ttf); }
+
+#fuente-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: yellow;
+  text-decoration: none; }
+
+#fuente-titulo {
+  font-family: "stFont";
+  font-size: 3.1rem;
+  color: yellow; }
+
+#fuente-portada {
+  font-family: "galaxyFont";
+  font-size: 2rem;
+  color: yellow; }
+
+#fuente-subtitulo {
+  font-family: "subtituloFont";
+  font-size: 1.5rem;
+  color: yellow; }
+
+#fuente-body {
+  font-family: 'Roboto', sans-serif; }
+
+/* mediaqueries */
+@media screen and (max-width: 520px) {
+  header .navbar {
+    text-decoration: none;
+    font-size: 1.2rem; }
+    header .navbar .container-fluid .logo img {
+      display: none; } }
+
+/* mapas */
+header .navbar .container-fluid .logo img, footer .subir a img {
+  height: 3rem;
+  width: 3rem; }
+
+body .productos .productosCards, body .noticias .noticiasCards, .mainCategorias div div .categoriasCards, .mainOfertas div .ofertasCards, .mainServicios .container .serviciosCards {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* header */
+header .titulo {
+  text-decoration: none; }
+
+header .navbar {
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 0.2rem groove #22387a62;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem black; }
+  header .navbar .container-fluid .logo img {
+    top: 10%; }
+  header .navbar .container-fluid .nav-link {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; }
+  header .navbar .container-fluid .active {
+    color: yellow; }
+
+/* body */
+body {
+  background: url("../img/asteroids.jpg") no-repeat center fixed;
+  background-size: cover;
+  color: white; }
+  body .mainIndex .carousel-portada {
+    margin-top: 10% !important;
+    box-shadow: 0.5rem 1rem 2rem black; }
+  body .productos .tituloProductos {
+    color: card-color #3612129a;
+    background: #222;
+    border: 0.1rem solid #FD2357;
+    box-shadow: 0 0.5rem 0.8rem 0.1rem black;
+    margin: 1rem 0 3rem 0;
+    padding: 1rem; }
+    body .productos .tituloProductos .nav-link {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+    body .productos .tituloProductos .active {
+      color: yellow; }
+  body .productos .productosCards {
+    justify-content: center;
+    background-image: url("../img/spaceassault.jpg");
+    width: 100%;
+    padding: 2rem 4rem 2rem 4rem;
+    margin: 1rem auto;
+    border: 0.2rem groove #be2a2a;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 2rem black; }
+    body .productos .productosCards .cardProductos {
+      width: 90%;
+      border-radius: 10px;
+      background-color: #3612129a;
+      border: 0.2rem #FD2357 solid; }
+    body .productos .productosCards .cardProductos:hover {
+      transform: scale 110% transition-duration 1s; }
+    body .productos .productosCards .imgProductos {
+      width: 23rem;
+      height: 23rem; }
+  body .productos .productosCards:hover {
+    background-image: url("../img/combateaereo.jpg");
+    border: 0.2rem groove #0c729b;
+    transition-duration: 0.6s; }
+  body .noticias .tituloNoticias {
+    color: card-color #3612129a;
+    background: #222;
+    border: 0.1rem solid #FD2357;
+    box-shadow: 0 0.5rem 0.8rem 0.1rem black;
+    margin: 1rem 0 3rem 0;
+    padding: 1rem; }
+    body .noticias .tituloNoticias .nav-link {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+    body .noticias .tituloNoticias .active {
+      color: yellow; }
+  body .noticias .noticiasCards {
+    background-image: url("../img/darthvadersaber.jpg");
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 0.2rem groove #be2a2a;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 2rem black; }
+    body .noticias .noticiasCards .cardNoticias {
+      width: 90%;
+      border-radius: 10px;
+      background-color: #3612129a;
+      border: 0.2rem #FD2357 solid; }
+    body .noticias .noticiasCards .cardNoticias:hover {
+      transform: scale 110% animation-duration 1s; }
+    body .noticias .noticiasCards .cardNoticias img {
+      height: 18rem; }
+  body .noticias .noticiasCards:hover {
+    background-image: url("../img/darthvader.jpg");
+    border: 0.2rem groove #0c729b;
+    transition-duration: 0.6s; }
+  body .formulario .tituloFormulario {
+    color: card-color #3612129a;
+    background: #222;
+    border: 0.1rem solid #FD2357;
+    box-shadow: 0 0.5rem 0.8rem 0.1rem black;
+    width: 40%;
+    margin: 1rem 0 3rem 0;
+    padding: 1rem; }
+    body .formulario .tituloFormulario .nav-link {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+    body .formulario .tituloFormulario .active {
+      color: yellow; }
+  body .formulario form {
+    width: 100%; }
+    body .formulario form fieldset {
+      margin: 1rem auto;
+      padding: 2rem 0;
+      border: none;
+      border-radius: 1rem;
+      background-color: #5a74c285;
+      font-size: 1.2rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+
+/* footer */
+footer {
+  background-color: rgba(84, 81, 124, 0.842);
+  padding: 1.2rem 0;
+  color: #efecec;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37); }
+  footer span {
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500; }
+  footer span:hover {
+    color: #5a94fa; }
+  footer .redes {
+    margin: 0.2rem auto; }
+    footer .redes a img {
+      height: 2.5rem;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      margin: 0 1rem; }
+    footer .redes a img:hover {
+      transform: scale(1.25); }
+  footer .subir {
+    margin: 1rem; }
+    footer .subir .nav-link {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase; }
+    footer .subir .active {
+      color: yellow; }
+    footer .subir a img {
+      top: 10%; }
+
+/*     Pagina Categorias     */
+.mainCategorias div .categorias-titulo {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 15px 32px 5px #1970695e;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  width: 80%;
+  transition: 1s ease-in-out; }
+
+.mainCategorias div div .subtituloCategorias {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 15px 32px 5px #1970695e;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  width: 60%;
+  transition: 1s ease-in-out; }
+
+.mainCategorias div div .categoriasCards {
+  justify-content: center;
+  background-image: url("../img/spaceassault.jpg");
+  width: 100%;
+  padding: 2rem 4rem 2rem 4rem;
+  margin: 1rem auto;
+  border: 0.2rem groove #be2a2a;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem #3612129a; }
+  .mainCategorias div div .categoriasCards .cardCategorias {
+    width: 90%;
+    border-radius: 10px;
+    border: 0.2rem #FD2357 solid; }
+  .mainCategorias div div .categoriasCards .cardCategorias:hover {
+    transform: scale(1.1);
+    animation-duration: 2s; }
+
+.mainCategorias div div .categoriasCards:hover {
+  background-image: url("../img/combateaereo.jpg");
+  border: 0.2rem groove #0c729b;
+  transition-duration: 0.6s; }
+
+/*     Pagina Ofertas     */
+.mainOfertas div .ofertas {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 15px 32px 5px #1970695e;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  width: 80%;
+  transition: 1s ease-in-out; }
+
+.mainOfertas div .ofertasCards {
+  background-image: url("../img/spaceassault.jpg");
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 0.2rem groove #be2a2a;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem black; }
+  .mainOfertas div .ofertasCards .cardOfertas {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #3612129a;
+    border: 0.2rem #FD2357 solid; }
+
+.mainOfertas div .ofertasCards:hover {
+  background-image: url("../img/stormtrooper.jpg");
+  border: 0.2rem groove #0c729b;
+  transition-duration: 0.6s; }
+
+/*     Pagina Arma tu Pc     */
+.armatupcMain .armatuPc {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 15px 32px 5px #1970695e;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  width: 80%;
+  transition: 1s ease-in-out; }
+
+/*     Pagina Servicios     */
+.mainServicios .tituloServ .servicios-titulo {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 15px 32px 5px #1970695e;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  transition: 1s ease-in-out;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.mainServicios .container .servicios {
+  color: #ffffffb3;
+  background: #222;
+  border: 1px solid #FD2357;
+  box-shadow: 0 0.5rem 0.8rem 0.1rem black;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  transition: 1s ease-in-out; }
+
+.mainServicios .container .serviciosCards {
+  background-image: url("../img/bespin.jpg");
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 0.2rem groove #be2a2a;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 2rem black; }
+  .mainServicios .container .serviciosCards .cardServicios {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #3612129a;
+    border: 0.2rem #FD2357 solid; }
+  .mainServicios .container .serviciosCards .mediosContacto:hover {
+    color: #5a94fa; }
+
+.mainServicios .container .serviciosCards:hover {
+  background-image: url("../img/stormtrooper.jpg");
+  border: 0.2rem groove #0c729b;
+  transition-duration: 0.6s; }

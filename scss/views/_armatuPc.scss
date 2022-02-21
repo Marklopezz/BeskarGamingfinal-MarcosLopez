@@ -1,0 +1,12 @@
+.armatupcMain {
+    .armatuPc {
+        color: map-get($map: $colores, $key: fontAlt-color);
+        background: map-get($map: $colores, $key: backgrounds);
+        border: 1px solid $color-cards;
+        box-shadow: 0 15px 32px 5px map-get($map: $colores, $key: shadowAlt-color);
+        margin: 1rem 0 1rem 0;
+        padding: 1rem;
+        width: 80%;
+        transition: 1s ease-in-out;
+    }
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "stFont";
+    src: url(../font/Starjhol.ttf);
+}
+
+@font-face {
+    font-family: "starFont";
+    src: url(../font/Starjout.ttf);
+}
+
+@font-face {
+    font-family: "subtituloFont";
+    src: url(../font/Starjedi.ttf);
+}
+
+@font-face {
+    font-family: "galaxyFont";
+    src: url(../font/Strjmono.ttf);
+}
+
+#fuente-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: yellow;
+    text-decoration: none;
+}
+
+#fuente-titulo {
+    font-family: "stFont";
+    font-size: 3.1rem;
+    color: yellow;
+}
+
+#fuente-portada {
+    font-family: "galaxyFont";
+    font-size: 2rem;
+    color: yellow;
+}
+
+#fuente-subtitulo {
+    font-family: "subtituloFont";
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+#fuente-body {
+    font-family: 'Roboto', sans-serif;
+}
