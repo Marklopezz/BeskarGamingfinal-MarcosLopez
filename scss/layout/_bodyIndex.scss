@@ -109,7 +109,7 @@
                 background: map-get($map: $colores, $key: backgrounds);
                 border: 0.1rem solid $color-cards;
                 box-shadow: 0 0.5rem 0.8rem 0.1rem map-get($map: $colores, $key: shadow-color);
-                width: 40%;
+                width: 80%;
                 margin: 2rem auto;
                 padding: 1rem;
                 text-align: center;
