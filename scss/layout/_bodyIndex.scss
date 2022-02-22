@@ -37,7 +37,7 @@
                 border-radius: 1rem;
                 box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
                 .cardProductos {
-                    width: 90%;
+                    width: 22rem;
                     border-radius: 10px;
                     background-color: map-get($map: $colores, $key: card-color);
                     border: 0.2rem $color-cards solid;
@@ -46,8 +46,8 @@
                     @include animaciones (scale (110%) transition-duration (1s));
                 }
                 .imgProductos {
-                    width: 23rem;
-                    height: 23rem;
+                    width: 22rem;
+                    height: 22rem;
                 }
             }
             .productosCards:hover {
@@ -84,7 +84,7 @@
                 border-radius: 1rem;
                 box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
                 .cardNoticias {
-                    width: 90%;
+                    width: 22rem;
                     border-radius: 10px;
                     background-color: map-get($map: $colores, $key: card-color);
                     border: 0.2rem $color-cards solid;
@@ -93,7 +93,7 @@
                     @include animaciones (scale (110%) animation-duration (1s));
                 }
                 .cardNoticias img {
-                    height: 18rem;
+                    height: 22rem;
                 }
             }
             .noticiasCards:hover {

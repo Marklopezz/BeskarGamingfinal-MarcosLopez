@@ -100,15 +100,15 @@ body {
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 2rem black; }
     body .productos .productosCards .cardProductos {
-      width: 90%;
+      width: 22rem;
       border-radius: 10px;
       background-color: #3612129a;
       border: 0.2rem #FD2357 solid; }
     body .productos .productosCards .cardProductos:hover {
       transform: scale 110% transition-duration 1s; }
     body .productos .productosCards .imgProductos {
-      width: 23rem;
-      height: 23rem; }
+      width: 22rem;
+      height: 22rem; }
   body .productos .productosCards:hover {
     background-image: url("../img/combateaereo.jpg");
     border: 0.2rem groove #0c729b;
@@ -136,14 +136,14 @@ body {
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 2rem black; }
     body .noticias .noticiasCards .cardNoticias {
-      width: 90%;
+      width: 22rem;
       border-radius: 10px;
       background-color: #3612129a;
       border: 0.2rem #FD2357 solid; }
     body .noticias .noticiasCards .cardNoticias:hover {
       transform: scale 110% animation-duration 1s; }
     body .noticias .noticiasCards .cardNoticias img {
-      height: 18rem; }
+      height: 22rem; }
   body .noticias .noticiasCards:hover {
     background-image: url("../img/darthvader.jpg");
     border: 0.2rem groove #0c729b;
