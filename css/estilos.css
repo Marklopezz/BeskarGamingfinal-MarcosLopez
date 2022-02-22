@@ -205,6 +205,7 @@ footer {
     margin: 0.2rem auto; }
     footer .redes a img {
       height: 2.5rem;
+      width: 2.5rem;
       cursor: pointer;
       transition: all .5s ease-in-out;
       margin: 0 1rem; }
@@ -365,6 +366,9 @@ footer {
       .mainServicios .container .serviciosCards .cardServicios img {
         width: 23.5rem;
         height: 23.5rem; }
+    .mainServicios .container .serviciosCards .cardServicios:hover {
+      transform: scale(1.1);
+      animation-duration: 2s; }
     .mainServicios .container .serviciosCards .contactoCards {
       display: flex;
       width: 40%;
