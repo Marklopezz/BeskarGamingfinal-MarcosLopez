@@ -1,44 +1,70 @@
 .mainServicios {
     .tituloServ {
         .servicios-titulo {
+            width: 60%;
+            margin: 1rem auto;
+            padding: 1rem;
+            text-align: center;
             color: map-get($map: $colores, $key: fontAlt-color);
             background: map-get($map: $colores, $key: backgrounds);
             border: 1px solid $color-cards;
             box-shadow: 0 15px 32px 5px map-get($map: $colores, $key: shadowAlt-color);
-            margin: 1rem 0 1rem 0;
-            padding: 1rem;
             transition: 1s ease-in-out;
-            width: 60%;
-            margin-left: 20%;
-            margin-right: 20%;
         }
     }
     .container {
+        margin: 2rem auto;
         .servicios {
-            color: map-get($map: $colores, $key: fontAlt-color);
-            background: map-get($map: $colores, $key: backgrounds);
-            border: 1px solid $color-cards;
-            box-shadow: 0 0.5rem 0.8rem 0.1rem map-get($map: $colores, $key: shadow-color);
-            margin: 1rem 0 1rem 0;
+            width: 80%;
+            margin: 1rem auto;
             padding: 1rem;
+            color: map-get($map: $colores, $key: fontAlt-color);
+            background: map-get($map: $colores, $key: backgroundsAlt);
+            border: 1px solid $color-cards;
+            box-shadow: 0 15px 32px 5px map-get($map: $colores, $key: shadowAlt-color);
             transition: 1s ease-in-out;
+            text-align: center;
         }
         .serviciosCards {
-            background-image: url("../img/bespin.jpg");
-            @extend %bg-img;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             width: 100%;
             padding: 1rem;
             margin: 1rem auto;
+            gap: 10%;
+            text-align: center;
+            background-image: url("../img/bespin.jpg");
+            @extend %bg-img;
             border: 0.2rem groove $border-color;
             border-radius: 1rem;
             box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
             .cardServicios {
-                width: 90%;
-                border-radius: 10px;
-                background-color: map-get($map: $colores, $key: card-color);
+                display: flex;
+                margin: 2rem 0 2rem 0;
+                width: 24rem;
+                height: 24rem;
+                border-radius: 1rem;
+                background-color: rgba(34, 34, 34, 0.699);
                 border: 0.2rem $color-cards solid;
+                img {
+                    width: 23.5rem;
+                    height: 23.5rem;
+                }
             }
-            .mediosContacto:hover {
+            .contactoCards {
+                display: flex;
+                width: 40%;
+                height: auto;
+                text-align: center;
+                margin: 2rem auto;
+                border-radius: 1rem;
+                background-color: rgba(34, 34, 34, 0.699);
+                border: 0.2rem $color-cards solid;
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+            }
+            .contactoCards:hover {
                 color: #5a94fa;
             }
         }

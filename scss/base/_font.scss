@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: "subtituloFont";
-    src: url(../font/Starjedi.ttf);
-}
-
-@font-face {
     font-family: "galaxyFont";
     src: url(../font/Strjmono.ttf);
 }
@@ -34,12 +29,6 @@
 #fuente-portada {
     font-family: "galaxyFont";
     font-size: 2rem;
-    color: yellow;
-}
-
-#fuente-subtitulo {
-    font-family: "subtituloFont";
-    font-size: 1.5rem;
     color: yellow;
 }
 

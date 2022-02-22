@@ -8,10 +8,6 @@
   src: url(../font/Starjout.ttf); }
 
 @font-face {
-  font-family: "subtituloFont";
-  src: url(../font/Starjedi.ttf); }
-
-@font-face {
   font-family: "galaxyFont";
   src: url(../font/Strjmono.ttf); }
 
@@ -29,11 +25,6 @@
 #fuente-portada {
   font-family: "galaxyFont";
   font-size: 2rem;
-  color: yellow; }
-
-#fuente-subtitulo {
-  font-family: "subtituloFont";
-  font-size: 1.5rem;
   color: yellow; }
 
 #fuente-body {
@@ -158,13 +149,15 @@ body {
     border: 0.2rem groove #0c729b;
     transition-duration: 0.6s; }
   body .formulario .tituloFormulario {
+    display: flex;
     color: card-color #3612129a;
     background: #222;
     border: 0.1rem solid #FD2357;
     box-shadow: 0 0.5rem 0.8rem 0.1rem black;
     width: 40%;
-    margin: 1rem 0 3rem 0;
-    padding: 1rem; }
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center; }
     body .formulario .tituloFormulario .nav-link {
       color: yellow;
       text-decoration: none;
@@ -183,7 +176,15 @@ body {
       font-size: 1.2rem;
       display: flex;
       flex-flow: column;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
+      body .formulario form fieldset h4 {
+        font-size: 2.2rem; }
+      body .formulario form fieldset button {
+        background-color: #1C1F23;
+        border-radius: 2rem;
+        color: white;
+        border: solid #1C1F23; }
 
 /* footer */
 footer {
@@ -227,23 +228,28 @@ footer {
   background: #222;
   border: 1px solid #FD2357;
   box-shadow: 0 15px 32px 5px #1970695e;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem auto 1rem auto;
   padding: 1rem;
   width: 80%;
-  transition: 1s ease-in-out; }
+  transition: 1s ease-in-out;
+  text-align: center; }
 
 .mainCategorias div div .subtituloCategorias {
   color: #ffffffb3;
-  background: #222;
+  background: rgba(34, 34, 34, 0.815);
   border: 1px solid #FD2357;
   box-shadow: 0 15px 32px 5px #1970695e;
-  margin: 1rem 0 1rem 0;
+  margin: auto;
   padding: 1rem;
-  width: 60%;
-  transition: 1s ease-in-out; }
+  width: 80%;
+  transition: 1s ease-in-out;
+  text-align: center; }
 
 .mainCategorias div div .categoriasCards {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 10%;
   background-image: url("../img/spaceassault.jpg");
   width: 100%;
   padding: 2rem 4rem 2rem 4rem;
@@ -252,9 +258,15 @@ footer {
   border-radius: 1rem;
   box-shadow: 0.5rem 1rem 2rem #3612129a; }
   .mainCategorias div div .categoriasCards .cardCategorias {
-    width: 90%;
+    display: flex;
+    margin: 2rem 0 2rem 0;
+    width: 24rem;
+    height: 24rem;
     border-radius: 10px;
     border: 0.2rem #FD2357 solid; }
+    .mainCategorias div div .categoriasCards .cardCategorias img {
+      width: 23.5rem;
+      height: 23.5rem; }
   .mainCategorias div div .categoriasCards .cardCategorias:hover {
     transform: scale(1.1);
     animation-duration: 2s; }
@@ -307,43 +319,66 @@ footer {
 
 /*     Pagina Servicios     */
 .mainServicios .tituloServ .servicios-titulo {
+  width: 60%;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
   color: #ffffffb3;
   background: #222;
   border: 1px solid #FD2357;
   box-shadow: 0 15px 32px 5px #1970695e;
-  margin: 1rem 0 1rem 0;
-  padding: 1rem;
-  transition: 1s ease-in-out;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%; }
-
-.mainServicios .container .servicios {
-  color: #ffffffb3;
-  background: #222;
-  border: 1px solid #FD2357;
-  box-shadow: 0 0.5rem 0.8rem 0.1rem black;
-  margin: 1rem 0 1rem 0;
-  padding: 1rem;
   transition: 1s ease-in-out; }
 
-.mainServicios .container .serviciosCards {
-  background-image: url("../img/bespin.jpg");
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem auto;
-  border: 0.2rem groove #be2a2a;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 1rem 2rem black; }
-  .mainServicios .container .serviciosCards .cardServicios {
-    width: 90%;
-    border-radius: 10px;
-    background-color: #3612129a;
-    border: 0.2rem #FD2357 solid; }
-  .mainServicios .container .serviciosCards .mediosContacto:hover {
-    color: #5a94fa; }
-
-.mainServicios .container .serviciosCards:hover {
-  background-image: url("../img/stormtrooper.jpg");
-  border: 0.2rem groove #0c729b;
-  transition-duration: 0.6s; }
+.mainServicios .container {
+  margin: 2rem auto; }
+  .mainServicios .container .servicios {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: #ffffffb3;
+    background: rgba(34, 34, 34, 0.815);
+    border: 1px solid #FD2357;
+    box-shadow: 0 15px 32px 5px #1970695e;
+    transition: 1s ease-in-out;
+    text-align: center; }
+  .mainServicios .container .serviciosCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    gap: 10%;
+    text-align: center;
+    background-image: url("../img/bespin.jpg");
+    border: 0.2rem groove #be2a2a;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 2rem black; }
+    .mainServicios .container .serviciosCards .cardServicios {
+      display: flex;
+      margin: 2rem 0 2rem 0;
+      width: 24rem;
+      height: 24rem;
+      border-radius: 1rem;
+      background-color: rgba(34, 34, 34, 0.699);
+      border: 0.2rem #FD2357 solid; }
+      .mainServicios .container .serviciosCards .cardServicios img {
+        width: 23.5rem;
+        height: 23.5rem; }
+    .mainServicios .container .serviciosCards .contactoCards {
+      display: flex;
+      width: 40%;
+      height: auto;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      background-color: rgba(34, 34, 34, 0.699);
+      border: 0.2rem #FD2357 solid;
+      transition: all .5s ease-in-out;
+      cursor: pointer; }
+    .mainServicios .container .serviciosCards .contactoCards:hover {
+      color: #5a94fa; }
+  .mainServicios .container .serviciosCards:hover {
+    background-image: url("../img/stormtrooper.jpg");
+    border: 0.2rem groove #0c729b;
+    transition-duration: 0.6s; }
