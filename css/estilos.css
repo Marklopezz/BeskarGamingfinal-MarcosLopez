@@ -36,7 +36,13 @@
     text-decoration: none;
     font-size: 1.2rem; }
     header .navbar .container-fluid .logo img {
-      display: none; } }
+      display: none; }
+  .noticias .noticiasCards .cardNoticias {
+    width: 22rem; }
+  .noticias .cardNoticias img {
+    height: 20rem; }
+  .carousel-item img {
+    height: 40vh !important; } }
 
 /* mapas */
 header .navbar .container-fluid .logo img, footer .subir a img {
@@ -75,7 +81,13 @@ body {
   color: white; }
   body .mainIndex .carousel-portada {
     margin-top: 5% !important;
-    box-shadow: 0.5rem 1rem 2rem black; }
+    box-shadow: 1rem 2rem 2rem black; }
+    body .mainIndex .carousel-portada div .carousel-item {
+      height: 100%; }
+      body .mainIndex .carousel-portada div .carousel-item img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; }
   body .productos .tituloProductos {
     color: card-color #3612129a;
     background: #222;
@@ -94,20 +106,20 @@ body {
     justify-content: center;
     background-image: url("../img/spaceassault.jpg");
     width: 100%;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 2rem;
     margin: 1rem auto;
     border: 0.2rem groove #be2a2a;
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 2rem black; }
     body .productos .productosCards .cardProductos {
-      width: 22rem;
+      width: 90%;
       border-radius: 10px;
       background-color: #3612129a;
       border: 0.2rem #FD2357 solid; }
     body .productos .productosCards .cardProductos:hover {
-      transform: scale 110% transition-duration 1s; }
+      transform: scale(1.1); }
     body .productos .productosCards .imgProductos {
-      width: 22rem;
+      width: 100%;
       height: 22rem; }
   body .productos .productosCards:hover {
     background-image: url("../img/combateaereo.jpg");
@@ -136,14 +148,14 @@ body {
     border-radius: 1rem;
     box-shadow: 0.5rem 1rem 2rem black; }
     body .noticias .noticiasCards .cardNoticias {
-      width: 22rem;
+      width: 100%;
       border-radius: 10px;
       background-color: #3612129a;
       border: 0.2rem #FD2357 solid; }
     body .noticias .noticiasCards .cardNoticias:hover {
-      transform: scale 110% animation-duration 1s; }
+      transform: scale(1.1); }
     body .noticias .noticiasCards .cardNoticias img {
-      height: 22rem; }
+      height: 21rem; }
   body .noticias .noticiasCards:hover {
     background-image: url("../img/darthvader.jpg");
     border: 0.2rem groove #0c729b;
@@ -154,7 +166,7 @@ body {
     background: #222;
     border: 0.1rem solid #FD2357;
     box-shadow: 0 0.5rem 0.8rem 0.1rem black;
-    width: 80%;
+    width: 50%;
     margin: 2rem auto;
     padding: 1rem;
     text-align: center; }
@@ -309,13 +321,13 @@ footer {
 
 /*     Pagina Arma tu Pc     */
 .armatupcMain .armatuPc {
+  width: 80%;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
   color: #ffffffb3;
   background: #222;
   border: 1px solid #FD2357;
   box-shadow: 0 15px 32px 5px #1970695e;
-  margin: 1rem 0 1rem 0;
-  padding: 1rem;
-  width: 80%;
   transition: 1s ease-in-out; }
 
 /*     Pagina Servicios     */
@@ -371,10 +383,10 @@ footer {
       animation-duration: 2s; }
     .mainServicios .container .serviciosCards .contactoCards {
       display: flex;
-      width: 40%;
+      width: 65%;
       height: auto;
       text-align: center;
-      margin: 2rem auto;
+      margin: 2rem 10%;
       border-radius: 1rem;
       background-color: rgba(34, 34, 34, 0.699);
       border: 0.2rem #FD2357 solid;

@@ -10,4 +10,19 @@
             }
         }
     }
+    .noticias {
+        .noticiasCards {
+            .cardNoticias {
+                width: 22rem;
+            }
+        }
+        .cardNoticias img {
+            height: 20rem;
+        }
+    }
+    .carousel-item {
+        img {
+            height: 40vh !important;
+        }
+    }
 }

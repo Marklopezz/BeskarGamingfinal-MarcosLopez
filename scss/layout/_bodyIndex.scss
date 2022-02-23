@@ -5,7 +5,17 @@
         .mainIndex {
             .carousel-portada {
                 margin-top: 5% !important;
-                box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
+                box-shadow: 1rem 2rem 2rem map-get($map: $colores, $key: shadow-color);
+                div {
+                    .carousel-item {
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100vh;
+                            object-fit: cover;
+                        }
+                    }
+                }
             }
         }
         .productos {
@@ -31,22 +41,22 @@
                 background-image: url("../img/spaceassault.jpg");
                 @extend %bg-img;
                 width: 100%;
-                padding: 2rem 4rem 2rem 4rem;
+                padding: 2rem;
                 margin: 1rem auto;
                 border: 0.2rem groove $border-color;
                 border-radius: 1rem;
                 box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
                 .cardProductos {
-                    width: 22rem;
+                    width: 90%;
                     border-radius: 10px;
                     background-color: map-get($map: $colores, $key: card-color);
                     border: 0.2rem $color-cards solid;
                 }
                 .cardProductos:hover {
-                    @include animaciones (scale (110%) transition-duration (1s));
+                    transform: scale(1.1);
                 }
                 .imgProductos {
-                    width: 22rem;
+                    width: 100%;
                     height: 22rem;
                 }
             }
@@ -84,16 +94,16 @@
                 border-radius: 1rem;
                 box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
                 .cardNoticias {
-                    width: 22rem;
+                    width: 100%;
                     border-radius: 10px;
                     background-color: map-get($map: $colores, $key: card-color);
                     border: 0.2rem $color-cards solid;
                 }
                 .cardNoticias:hover {
-                    @include animaciones (scale (110%) animation-duration (1s));
+                    transform: scale(1.1);
                 }
                 .cardNoticias img {
-                    height: 22rem;
+                    height: 21rem;
                 }
             }
             .noticiasCards:hover {
@@ -109,7 +119,7 @@
                 background: map-get($map: $colores, $key: backgrounds);
                 border: 0.1rem solid $color-cards;
                 box-shadow: 0 0.5rem 0.8rem 0.1rem map-get($map: $colores, $key: shadow-color);
-                width: 80%;
+                width: 50%;
                 margin: 2rem auto;
                 padding: 1rem;
                 text-align: center;
