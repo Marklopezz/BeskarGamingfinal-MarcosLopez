@@ -39,14 +39,18 @@
       display: none; }
   .productos .productosCards .cardNoticias {
     width: 22rem; }
-  .productos .cardProductos img {
-    height: 18rem !important; }
+  .productos .cardProductos img#productImg {
+    height: 18rem; }
   .noticias .noticiasCards .cardNoticias {
     width: 22rem; }
-  .noticias .cardNoticias img {
-    height: 16rem !important; }
-  .carousel-item img {
-    height: 40vh !important; } }
+  .noticias .cardNoticias img#newsImg {
+    height: 16rem; }
+  .carousel-item img#carouselImg {
+    height: 40vh; }
+  .categoriasCards .cardCategorias#categoryCard {
+    height: 18rem; }
+  .categoriasCards img#categoryImg {
+    height: 18rem; } }
 
 /* mapas */
 header .navbar .container-fluid .logo img, footer .subir a img {

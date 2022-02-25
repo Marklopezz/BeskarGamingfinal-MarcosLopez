@@ -16,8 +16,8 @@
                 width: 22rem;
             }
         }
-        .cardProductos img {
-            height: 18rem !important;
+        .cardProductos img#productImg {
+            height: 18rem;
         }
     }
     .noticias {
@@ -26,13 +26,21 @@
                 width: 22rem;
             }
         }
-        .cardNoticias img {
-            height: 16rem !important;
+        .cardNoticias img#newsImg {
+            height: 16rem;
         }
     }
     .carousel-item {
-        img {
-            height: 40vh !important;
+        img#carouselImg {
+            height: 40vh;
+        }
+    }
+    .categoriasCards {
+        .cardCategorias#categoryCard {
+            height: 18rem;
+        }
+        img#categoryImg {
+            height: 18rem;
         }
     }
 }
