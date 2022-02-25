@@ -118,7 +118,8 @@ body {
     margin: 1rem auto;
     border: 0.2rem groove #be2a2a;
     border-radius: 1rem;
-    box-shadow: 0.5rem 1rem 2rem black; }
+    box-shadow: 0.5rem 1rem 2rem black;
+    transition-duration: 0.6s; }
     body .productos .productosCards .cardProductos {
       width: 90%;
       border-radius: 10px;
@@ -132,8 +133,7 @@ body {
       height: 22rem; }
   body .productos .productosCards:hover {
     background-image: url("../img/combateaereo.jpg");
-    border: 0.2rem groove #0c729b;
-    transition-duration: 0.6s; }
+    border: 0.2rem groove #0c729b; }
   body .noticias .tituloNoticias {
     color: card-color #3612129a;
     background: #222;
@@ -155,7 +155,8 @@ body {
     margin: 1rem auto;
     border: 0.2rem groove #be2a2a;
     border-radius: 1rem;
-    box-shadow: 0.5rem 1rem 2rem black; }
+    box-shadow: 0.5rem 1rem 2rem black;
+    transition-duration: 0.6s; }
     body .noticias .noticiasCards .cardNoticias {
       width: 100%;
       border-radius: 10px;
@@ -167,8 +168,7 @@ body {
       height: 21rem; }
   body .noticias .noticiasCards:hover {
     background-image: url("../img/darthvader.jpg");
-    border: 0.2rem groove #0c729b;
-    transition-duration: 0.6s; }
+    border: 0.2rem groove #0c729b; }
   body .formulario .tituloFormulario {
     display: flex;
     color: card-color #3612129a;
@@ -188,7 +188,7 @@ body {
       color: yellow; }
   body .formulario form {
     width: 100%; }
-    body .formulario form fieldset {
+    body .formulario form .fieldsetForm {
       margin: 1rem auto;
       padding: 2rem 0;
       border: none;
@@ -199,9 +199,9 @@ body {
       flex-flow: column;
       align-items: center;
       text-align: center; }
-      body .formulario form fieldset h4 {
+      body .formulario form .fieldsetForm h4 {
         font-size: 2.2rem; }
-      body .formulario form fieldset button {
+      body .formulario form .fieldsetForm button {
         background-color: #1C1F23;
         border-radius: 2rem;
         color: white;
@@ -214,8 +214,7 @@ footer {
   color: #efecec;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
-  text-decoration: none; }
+  box-shadow: 0 15px 50px 5px rgba(0, 0, 0, 0.37); }
   footer span {
     transition: all .5s ease-in-out;
     cursor: pointer;
@@ -225,14 +224,16 @@ footer {
     color: #5a94fa; }
   footer .redes {
     margin: 0.2rem auto; }
-    footer .redes a img {
-      height: 2.5rem;
-      width: 2.5rem;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
-      margin: 0 1rem; }
-    footer .redes a img:hover {
-      transform: scale(1.25); }
+    footer .redes a {
+      text-decoration: none; }
+      footer .redes a img {
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        margin: 0 1rem; }
+      footer .redes a img:hover {
+        transform: scale(1.25); }
   footer .subir {
     margin: 1rem; }
     footer .subir .nav-link {
@@ -279,25 +280,25 @@ footer {
   margin: 1rem auto;
   border: 0.2rem groove #be2a2a;
   border-radius: 1rem;
-  box-shadow: 0.5rem 1rem 2rem #3612129a; }
+  box-shadow: 0.5rem 1rem 2rem #3612129a;
+  transition-duration: 0.6s; }
   .mainCategorias div div .categoriasCards .cardCategorias {
     display: flex;
     margin: 2rem 0 2rem 0;
     width: 24rem;
     height: 24rem;
     border-radius: 10px;
-    border: 0.2rem #FD2357 solid; }
+    border: 0.2rem #FD2357 solid;
+    transition-duration: 0.6s; }
     .mainCategorias div div .categoriasCards .cardCategorias img {
       width: 23.5rem;
       height: 23.5rem; }
   .mainCategorias div div .categoriasCards .cardCategorias:hover {
-    transform: scale(1.1);
-    animation-duration: 2s; }
+    transform: scale(1.1); }
 
 .mainCategorias div div .categoriasCards:hover {
   background-image: url("../img/combateaereo.jpg");
-  border: 0.2rem groove #0c729b;
-  transition-duration: 0.6s; }
+  border: 0.2rem groove #0c729b; }
 
 /*     Pagina Ofertas     */
 .mainOfertas div .ofertas {
@@ -317,7 +318,8 @@ footer {
   margin: 1rem auto;
   border: 0.2rem groove #be2a2a;
   border-radius: 1rem;
-  box-shadow: 0.5rem 1rem 2rem black; }
+  box-shadow: 0.5rem 1rem 2rem black;
+  transition-duration: 0.6s; }
   .mainOfertas div .ofertasCards .cardOfertas {
     width: 90%;
     border-radius: 10px;
@@ -326,8 +328,7 @@ footer {
 
 .mainOfertas div .ofertasCards:hover {
   background-image: url("../img/stormtrooper.jpg");
-  border: 0.2rem groove #0c729b;
-  transition-duration: 0.6s; }
+  border: 0.2rem groove #0c729b; }
 
 /*     Pagina Arma tu Pc     */
 .armatupcMain .armatuPc {
@@ -339,6 +340,11 @@ footer {
   border: 1px solid #FD2357;
   box-shadow: 0 15px 32px 5px #1970695e;
   transition: 1s ease-in-out; }
+
+.armatupcMain .armatupcFieldset {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem #2e4faf93;
+  background: #1c316e70; }
 
 /*     Pagina Servicios     */
 .mainServicios .tituloServ .servicios-titulo {
@@ -376,7 +382,8 @@ footer {
     background-image: url("../img/bespin.jpg");
     border: 0.2rem groove #be2a2a;
     border-radius: 1rem;
-    box-shadow: 0.5rem 1rem 2rem black; }
+    box-shadow: 0.5rem 1rem 2rem black;
+    transition-duration: 0.6s; }
     .mainServicios .container .serviciosCards .cardServicios {
       display: flex;
       margin: 2rem 0 2rem 0;
@@ -384,13 +391,13 @@ footer {
       height: 24rem;
       border-radius: 1rem;
       background-color: rgba(34, 34, 34, 0.699);
-      border: 0.2rem #FD2357 solid; }
+      border: 0.2rem #FD2357 solid;
+      transition-duration: 0.6s; }
       .mainServicios .container .serviciosCards .cardServicios img {
         width: 23.5rem;
         height: 23.5rem; }
     .mainServicios .container .serviciosCards .cardServicios:hover {
-      transform: scale(1.1);
-      animation-duration: 2s; }
+      transform: scale(1.1); }
     .mainServicios .container .serviciosCards .contactoCards {
       display: flex;
       width: 65%;
@@ -406,5 +413,4 @@ footer {
       color: #5a94fa; }
   .mainServicios .container .serviciosCards:hover {
     background-image: url("../img/stormtrooper.jpg");
-    border: 0.2rem groove #0c729b;
-    transition-duration: 0.6s; }
+    border: 0.2rem groove #0c729b; }

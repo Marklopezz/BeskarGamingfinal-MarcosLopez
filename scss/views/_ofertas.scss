@@ -19,6 +19,7 @@
             border: 0.2rem groove $border-color;
             border-radius: 1rem;
             box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
+            transition-duration: 0.6s;
             .cardOfertas {
                 width: 90%;
                 border-radius: 10px;
@@ -29,7 +30,6 @@
         .ofertasCards:hover {
             background-image: url("../img/stormtrooper.jpg");
             border: 0.2rem groove map-get($map: $colores, $key: card-Hover);
-            transition-duration: 0.6s;
         }
     }
 }

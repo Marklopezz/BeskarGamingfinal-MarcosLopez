@@ -39,6 +39,7 @@
             border: 0.2rem groove $border-color;
             border-radius: 1rem;
             box-shadow: 0.5rem 1rem 2rem map-get($map: $colores, $key: shadow-color);
+            transition-duration: 0.6s;
             .cardServicios {
                 display: flex;
                 margin: 2rem 0 2rem 0;
@@ -47,6 +48,7 @@
                 border-radius: 1rem;
                 background-color: rgba(34, 34, 34, 0.699);
                 border: 0.2rem $color-cards solid;
+                transition-duration: 0.6s;
                 img {
                     width: 23.5rem;
                     height: 23.5rem;
@@ -54,7 +56,6 @@
             }
             .cardServicios:hover {
                 transform: scale(1.1);
-                animation-duration: 2s;
             }
             .contactoCards {
                 display: flex;
@@ -75,7 +76,6 @@
         .serviciosCards:hover {
             background-image: url("../img/stormtrooper.jpg");
             border: 0.2rem groove map-get($map: $colores, $key: card-Hover);
-            transition-duration: 0.6s;
         }
     }
 }
