@@ -214,7 +214,8 @@ footer {
   color: #efecec;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37); }
+  box-shadow: 0 15px 50px 5px rgba(170, 32, 32, 0.37);
+  text-decoration: none; }
   footer span {
     transition: all .5s ease-in-out;
     cursor: pointer;
