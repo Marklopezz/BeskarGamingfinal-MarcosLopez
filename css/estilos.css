@@ -50,14 +50,14 @@
   .categoriasCards .cardCategorias#categoryCard {
     height: 18rem; }
   .categoriasCards img#categoryImg {
-    height: 18rem; } }
+    height: 100%; } }
 
 /* mapas */
 header .navbar .container-fluid .logo img, footer .subir a img {
   height: 3rem;
   width: 3rem; }
 
-body .productos .productosCards, body .noticias .noticiasCards, .mainCategorias div div .categoriasCards, .mainOfertas div .ofertasCards, .mainServicios .container .serviciosCards {
+body .productos .productosCards, body .noticias .noticiasCards, .mainCategorias div div .categoriasCards, .mainOfertas div .ofertasCards, .mainServicios .container .serviciosCards, .mainServicios .container .contactoCards {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -388,7 +388,6 @@ footer {
     box-shadow: 0.5rem 1rem 2rem black;
     transition-duration: 0.6s; }
     .mainServicios .container .serviciosCards .cardServicios {
-      display: flex;
       margin: 2rem 0 2rem 0;
       width: 24rem;
       height: 24rem;
@@ -401,19 +400,36 @@ footer {
         height: 23.5rem; }
     .mainServicios .container .serviciosCards .cardServicios:hover {
       transform: scale(1.1); }
-    .mainServicios .container .serviciosCards .contactoCards {
-      display: flex;
-      width: 65%;
+  .mainServicios .container .serviciosCards:hover {
+    background-image: url("../img/stormtrooper.jpg");
+    border: 0.2rem groove #0c729b; }
+  .mainServicios .container .contactoCards {
+    display: grid;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/bespin.jpg");
+    border: 0.2rem groove #be2a2a;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem 2rem black;
+    transition-duration: 0.6s; }
+    .mainServicios .container .contactoCards .cardContacto {
+      width: auto;
       height: auto;
       text-align: center;
-      margin: 2rem 10%;
+      margin: 2rem;
+      padding: 0.5rem;
       border-radius: 1rem;
       background-color: rgba(34, 34, 34, 0.699);
       border: 0.2rem #FD2357 solid;
       transition: all .5s ease-in-out;
       cursor: pointer; }
-    .mainServicios .container .serviciosCards .contactoCards:hover {
+      .mainServicios .container .contactoCards .cardContacto img {
+        width: 2.5rem;
+        height: 2.5rem; }
+    .mainServicios .container .contactoCards .contactoCards:hover {
       color: #5a94fa; }
-  .mainServicios .container .serviciosCards:hover {
+  .mainServicios .container .contactoCards:hover {
     background-image: url("../img/stormtrooper.jpg");
     border: 0.2rem groove #0c729b; }
