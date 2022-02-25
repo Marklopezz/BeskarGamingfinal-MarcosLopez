@@ -324,7 +324,10 @@ footer {
     width: 90%;
     border-radius: 10px;
     background-color: #3612129a;
-    border: 0.2rem #FD2357 solid; }
+    border: 0.2rem #FD2357 solid;
+    transition-duration: 0.6s; }
+  .mainOfertas div .ofertasCards .cardOfertas:hover {
+    transform: scale(1.1); }
 
 .mainOfertas div .ofertasCards:hover {
   background-image: url("../img/stormtrooper.jpg");
