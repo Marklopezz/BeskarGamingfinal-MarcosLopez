@@ -10,6 +10,16 @@
             }
         }
     }
+    .productos {
+        .productosCards {
+            .cardNoticias {
+                width: 22rem;
+            }
+        }
+        .cardProductos img {
+            height: 18rem !important;
+        }
+    }
     .noticias {
         .noticiasCards {
             .cardNoticias {
@@ -17,7 +27,7 @@
             }
         }
         .cardNoticias img {
-            height: 20rem;
+            height: 16rem !important;
         }
     }
     .carousel-item {

@@ -37,10 +37,14 @@
     font-size: 1.2rem; }
     header .navbar .container-fluid .logo img {
       display: none; }
+  .productos .productosCards .cardNoticias {
+    width: 22rem; }
+  .productos .cardProductos img {
+    height: 18rem !important; }
   .noticias .noticiasCards .cardNoticias {
     width: 22rem; }
   .noticias .cardNoticias img {
-    height: 20rem; }
+    height: 16rem !important; }
   .carousel-item img {
     height: 40vh !important; } }
 
@@ -115,7 +119,8 @@ body {
       width: 90%;
       border-radius: 10px;
       background-color: #3612129a;
-      border: 0.2rem #FD2357 solid; }
+      border: 0.2rem #FD2357 solid;
+      object-fit: cover; }
     body .productos .productosCards .cardProductos:hover {
       transform: scale(1.1); }
     body .productos .productosCards .imgProductos {
